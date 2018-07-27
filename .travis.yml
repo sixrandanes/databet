@@ -1,0 +1,8 @@
+language: java
+jdk:
+  - oraclejdk10
+  
+before_install:
+ - chmod +x gradlew
+
+install: /bin/true
