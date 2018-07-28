@@ -1,0 +1,12 @@
+
+bootJar {
+    baseName = 'databet-ref'
+    version =  '0.1.0'
+ mainClassName = 'com.databet.ref.DatabetRefApplication'
+
+}
+
+springBoot {
+ mainClassName = 'com.databet.ref.DatabetRefApplication'
+}
+
