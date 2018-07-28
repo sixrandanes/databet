@@ -1,22 +1,9 @@
-                                                                                                                                            
-            dddddddd                                                         bbbbbbbb                                                       
-            d::::::d                          tttt                           b::::::b                                         tttt          
-            d::::::d                       ttt:::t                           b::::::b                                      ttt:::t          
-            d::::::d                       t:::::t                           b::::::b                                      t:::::t          
-            d:::::d                        t:::::t                            b:::::b                                      t:::::t          
-    ddddddddd:::::d   aaaaaaaaaaaaa  ttttttt:::::ttttttt      aaaaaaaaaaaaa   b:::::bbbbbbbbb        eeeeeeeeeeee    ttttttt:::::ttttttt    
-  dd::::::::::::::d   a::::::::::::a t:::::::::::::::::t      a::::::::::::a  b::::::::::::::bb    ee::::::::::::ee  t:::::::::::::::::t    
- d::::::::::::::::d   aaaaaaaaa:::::at:::::::::::::::::t      aaaaaaaaa:::::a b::::::::::::::::b  e::::::eeeee:::::eet:::::::::::::::::t    
-d:::::::ddddd:::::d            a::::atttttt:::::::tttttt               a::::a b:::::bbbbb:::::::be::::::e     e:::::etttttt:::::::tttttt    
-d::::::d    d:::::d     aaaaaaa:::::a      t:::::t              aaaaaaa:::::a b:::::b    b::::::be:::::::eeeee::::::e      t:::::t          
-d:::::d     d:::::d   aa::::::::::::a      t:::::t            aa::::::::::::a b:::::b     b:::::be:::::::::::::::::e       t:::::t          
-d:::::d     d:::::d  a::::aaaa::::::a      t:::::t           a::::aaaa::::::a b:::::b     b:::::be::::::eeeeeeeeeee        t:::::t          
-d:::::d     d:::::d a::::a    a:::::a      t:::::t    tttttta::::a    a:::::a b:::::b     b:::::be:::::::e                 t:::::t    tttttt
-d::::::ddddd::::::dda::::a    a:::::a      t::::::tttt:::::ta::::a    a:::::a b:::::bbbbbb::::::be::::::::e                t::::::tttt:::::t
- d:::::::::::::::::da:::::aaaa::::::a      tt::::::::::::::ta:::::aaaa::::::a b::::::::::::::::b  e::::::::eeeeeeee        tt::::::::::::::t
-  d:::::::::ddd::::d a::::::::::aa:::a       tt:::::::::::tt a::::::::::aa:::ab:::::::::::::::b    ee:::::::::::::e          tt:::::::::::tt
-   ddddddddd   ddddd  aaaaaaaaaa  aaaa         ttttttttttt    aaaaaaaaaa  aaaabbbbbbbbbbbbbbbb       eeeeeeeeeeeeee            ttttttttttt  
-                                                                                                                                            
-                                     
+       _        _       
+   __| | __ _| |_ __ _| |__   ___| |_      ___| |_ __ _| |_ ___ 
+  / _` |/ _` | __/ _` | '_ \ / _ \ __|____/ __| __/ _` | __/ __|
+ | (_| | (_| | || (_| | |_) |  __/ ||_____\__ \ || (_| | |_\__ \
+  \__,_|\__,_|\__\__,_|_.__/ \___|\__|    |___/\__\__,_|\__|___/
+                                                                
+                             
 version :: ${application.version}
 spring-boot-version :: ${spring-boot.version}
