@@ -1,4 +1,4 @@
-package com.databet.ref;
+package com.databet.ref.competitions;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -16,6 +16,12 @@ public class Competition {
 	private String code;
 	
 	private String plan;
+	
+	private int numberOfAvailableSeasons;
+	
+	private String lastUpdated;
+	
+	private Saison currentSeason;
 	
 
 	public int getId() {
@@ -56,6 +62,30 @@ public class Competition {
 
 	public void setPlan(String plan) {
 		this.plan = plan;
+	}
+
+	public int getNumberOfAvailableSeasons() {
+		return numberOfAvailableSeasons;
+	}
+
+	public void setNumberOfAvailableSeasons(int numberOfAvailableSeasons) {
+		this.numberOfAvailableSeasons = numberOfAvailableSeasons;
+	}
+
+	public String getLastUpdated() {
+		return lastUpdated;
+	}
+
+	public void setLastUpdated(String lastUpdated) {
+		this.lastUpdated = lastUpdated;
+	}
+
+	public Saison getCurrentSeason() {
+		return currentSeason;
+	}
+
+	public void setCurrentSeason(Saison currentSeason) {
+		this.currentSeason = currentSeason;
 	}
 
 }

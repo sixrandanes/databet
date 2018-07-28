@@ -1,4 +1,4 @@
-package com.databet.ref;
+package com.databet.ref.competitions;
 
 public class Area {
 
