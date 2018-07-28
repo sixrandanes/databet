@@ -1,0 +1,8 @@
+spring:
+ application:
+  name: databet-stats
+server:
+ port: 8073
+management:
+ server:
+ port: 8074

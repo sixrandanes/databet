@@ -1,0 +1,8 @@
+spring:
+ application:
+  name: databet-social
+server:
+ port: 8093
+management:
+ server:
+ port: 8094

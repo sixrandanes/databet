@@ -1,0 +1,8 @@
+spring:
+ application:
+  name: databet-cotes
+server:
+ port: 8083
+management:
+ server:
+ port: 8084
