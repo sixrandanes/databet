@@ -41,7 +41,4 @@ public class Saison {
 	public void setCurrentMatchday(int currentMatchday) {
 		this.currentMatchday = currentMatchday;
 	}
-	
-
-
 }

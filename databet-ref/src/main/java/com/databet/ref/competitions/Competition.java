@@ -3,6 +3,8 @@ package com.databet.ref.competitions;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.databet.ref.areas.Area;
+
 @Document(collection = "competitions")
 public class Competition {
 	
