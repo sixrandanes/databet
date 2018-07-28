@@ -23,7 +23,12 @@ targetCompatibility = 10
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile("junit:junit")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    testCompile('org.springframework.boot:spring-boot-starter-test') {
+		exclude module: "junit"
+	}
+    testCompile("org.junit.jupiter:junit-jupiter-api")
+	testRuntime("org.junit.jupiter:junit-jupiter-engine")
 }
 
 }
