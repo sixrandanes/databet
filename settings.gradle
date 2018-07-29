@@ -1,1 +1,1 @@
-include 'databet-cotes','databet-stats', 'databet-social', 'databet-ref' 
+include 'databet-cotes','databet-stats', 'databet-social', 'databet-ref', 'databet-eureka' 

@@ -40,6 +40,8 @@ public class Match {
 
 	private Score score;
 
+	private List<Referee> referees;
+
 	private List<Goal> goals;
 
 	private List<Booking> bookings;
@@ -180,6 +182,14 @@ public class Match {
 
 	public void setSubstitution(List<Substitution> substitution) {
 		this.substitution = substitution;
+	}
+
+	public List<Referee> getReferees() {
+		return referees;
+	}
+
+	public void setReferees(List<Referee> referees) {
+		this.referees = referees;
 	}
 
 }

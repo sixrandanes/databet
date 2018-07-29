@@ -12,10 +12,10 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
-import com.databet.ref.areas.teams.CompetitionsMajor;
 import com.databet.ref.competitions.Competition;
 import com.databet.ref.competitions.CompetitionRepository;
 import com.databet.ref.conf.DatabetRestTemplate;
+import com.databet.ref.teams.CompetitionsMajor;
 
 @Service
 public class MatchService {

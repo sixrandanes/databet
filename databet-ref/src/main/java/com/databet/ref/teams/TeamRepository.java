@@ -1,4 +1,4 @@
-package com.databet.ref.areas.teams;
+package com.databet.ref.teams;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
