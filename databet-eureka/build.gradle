@@ -1,0 +1,17 @@
+
+bootJar {
+    baseName = 'databet-eureka'
+    version =  '0.1.0'
+ 	mainClassName = 'com.databet.eureka.DatabetEurekaApplication'
+}
+
+springBoot {
+ mainClassName = 'com.databet.eureka.DatabetEurekaApplication'
+}
+
+dependencies {
+compile 'javax.xml.bind:jaxb-api:2.3.0'
+compile 'javax.xml:jaxb-impl:2.1'
+compile 'javax.activation:activation:1.1.1'
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+}

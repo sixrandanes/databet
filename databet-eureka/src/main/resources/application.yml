@@ -1,0 +1,17 @@
+spring:
+ application:
+  name: databet-eureka
+  
+server:
+ port: 8043
+management:
+ server:
+ port: 8044
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
