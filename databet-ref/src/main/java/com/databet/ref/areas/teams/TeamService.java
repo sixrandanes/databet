@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
@@ -35,7 +34,6 @@ public class TeamService {
 		this.databetRestTemplate = databetRestTemplate;
 	}
 
-	@Scheduled(fixedRate = 30000)
 	public void searchTeams() {
 		LOGGER.info("calling teams...");
 
@@ -57,16 +55,16 @@ public class TeamService {
 		return areasFromMajorCompet.stream().filter(o -> o.equals(name)).findFirst().isPresent();
 	}
 
-	private void findTeamByCompetitionId(int competionId) {
+	private void findTeamByCompetitionId(int competitionId) {
 
 		ResponseEntity<TeamList> response = this.databetRestTemplate.exchange(teamResource, HttpMethod.GET, this.databetRestTemplate.configureHeaders(), TeamList.class,
-				competionId);
+				competitionId);
 
 		Assert.isTrue(response.getBody().getCount() == response.getBody().getTeams().size(), "Incoherence dans la liste des teams reçues.");
 
 		LOGGER.info("teams repertories : {}", response.getBody().getCount());
 
-		response.getBody().getTeams().stream().forEach(f -> f.setCompetitionId(competionId));
+		response.getBody().getTeams().stream().forEach(f -> f.setCompetitionId(competitionId));
 
 		teamRepository.saveAll(response.getBody().getTeams());
 
