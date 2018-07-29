@@ -1,4 +1,4 @@
-package com.databet.social;
+package com.databet.eureka;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
