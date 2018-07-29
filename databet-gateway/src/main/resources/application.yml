@@ -1,17 +1,9 @@
 spring:
  application:
-  name: databet-eureka
+  name: databet-gateway
   
 server:
- port: 8043
+ port: 8023
 management:
  server:
- port: 8044
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+ port: 8024
