@@ -6,3 +6,8 @@ server:
 management:
  server:
  port: 8074
+
+eureka:
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8043/eureka/

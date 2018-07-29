@@ -1,4 +1,3 @@
-
 bootJar {
     baseName = 'databet-ref'
     version =  '0.1.0'
