@@ -17,7 +17,6 @@ public class CompetionService {
 	}
 	
 	
-	@Scheduled(fixedRate = 35000)
 	public void searchCompetitions() {
 		RestTemplate restTemplate = new RestTemplate();
 		CompetitionList competitions = restTemplate.getForObject(competitionResource, CompetitionList.class);
