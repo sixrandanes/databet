@@ -1,11 +1,24 @@
 bootJar {
     baseName = 'databet-ref'
     version =  '0.1.0'
- mainClassName = 'com.databet.ref.DatabetRefApplication'
-
+ 	mainClassName = 'com.databet.ref.DatabetRefApplication'
 }
 
-springBoot {
- mainClassName = 'com.databet.ref.DatabetRefApplication'
+docker {
+    dependsOn build
+    name "${project.group}/${bootJar.baseName}"
+    files bootJar.archivePath
+  	buildArgs(['JAR_FILE': "${bootJar.archiveName}"])
 }
 
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    testCompile('org.springframework.boot:spring-boot-starter-test') {
+		exclude module: "junit"
+	}
+    testCompile("org.junit.jupiter:junit-jupiter-api")
+	testRuntime("org.junit.jupiter:junit-jupiter-engine")
+}
