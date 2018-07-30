@@ -1,0 +1,25 @@
+package com.databet.ref.footballdata.matches;
+
+public class Fulltime {
+
+	private String homeTeam;
+
+	private String fullTeam;
+
+	public String getHomeTeam() {
+		return homeTeam;
+	}
+
+	public void setHomeTeam(String homeTeam) {
+		this.homeTeam = homeTeam;
+	}
+
+	public String getFullTeam() {
+		return fullTeam;
+	}
+
+	public void setFullTeam(String fullTeam) {
+		this.fullTeam = fullTeam;
+	}
+
+}
