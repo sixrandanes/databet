@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import com.databet.ref.footballdata.competitions.Competition;
 import com.databet.ref.footballdata.competitions.Saison;
 
-@Document(collection = "matches")
+@Document(collection = "fd_matches")
 public class Match {
 
 	@Id

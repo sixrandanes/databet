@@ -7,36 +7,36 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.databet.ref.footballdata.areas.Area;
 
-@Document(collection = "teams")
+@Document(collection = "fd_teams")
 public class Team {
 
 	@Id
 	private int id;
-	
+
 	private Area area;
-	
+
 	private String name;
-	
+
 	private String shortName;
-	
+
 	private String tla;
-	
+
 	private String address;
-	
+
 	private String phone;
-	
+
 	private String website;
-	
+
 	private String email;
-	
+
 	private String founded;
-	
+
 	private String clubColors;
-	
+
 	private String venue;
 
 	private List<Squad> squad;
-	
+
 	private int competitionId;
 
 	public int getId() {

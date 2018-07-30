@@ -3,20 +3,20 @@ package com.databet.ref.footballdata.areas;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "areas")
+@Document(collection = "fd_areas")
 public class Area {
 
 	@Id
 	private int id;
-	
+
 	private String name;
-	
+
 	private String countryCode;
-	
+
 	private int parentAreaId;
-	
+
 	private String aparentArea;
-	
+
 	public int getId() {
 		return id;
 	}

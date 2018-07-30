@@ -5,26 +5,25 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.databet.ref.footballdata.areas.Area;
 
-@Document(collection = "competitions")
+@Document(collection = "fd_competitions")
 public class Competition {
-	
+
 	@Id
 	private int id;
-	
+
 	private Area area;
-	
+
 	private String name;
-	
+
 	private String code;
-	
+
 	private String plan;
-	
+
 	private int numberOfAvailableSeasons;
-	
+
 	private String lastUpdated;
-	
+
 	private Saison currentSeason;
-	
 
 	public int getId() {
 		return id;
