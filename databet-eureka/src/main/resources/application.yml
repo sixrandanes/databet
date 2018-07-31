@@ -6,7 +6,7 @@ server:
  port: 8043
 management:
  server:
- port: 8044
+  port: 8044
 eureka:
   instance:
     hostname: localhost

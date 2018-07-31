@@ -6,7 +6,7 @@ spring:
   mongodb:
    host: localhost
    port: 27017
-   database: admin
+   database: databet-ref
    user: admin
    password: admin
   
