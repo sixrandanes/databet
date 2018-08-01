@@ -1,27 +1,48 @@
 spring:
- application:
-  name: databet-gateway
+  application:
+    name: databet-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: databet
+        uri: lb://databet-ref
+        predicates:
+        - Path= /football-data/**
+        filters:
+        - AddResponseHeader=Access-Control-Allow-Origin, *
+        - StripPrefix=1
 
- cloud:
-  gateway:
-   routes:
-   - id: method_route
-     uri: http://localhost
-     predicates:
-     - Method=GET
-   - id: databet-ref
-     uri: localhost:8053
-   - id: database-cotes
-     uri: localhost:9998
-   - id: database-social
-     uri: localhost:9997
-   - id: database-stats
-     uri: localhost:9996
-  
+
+ribbon:
+ eureka:
+  enabled: true
+
 server:
  port: 8023
- servlet:
-  context-path: /api
+# servlet:
+#  context-path: /api
 management:
  server:
   port: 8024
+ endpoints:
+  web:
+   exposure:
+    include: "*"
+eureka:
+ client:
+  healthcheck:
+   enabled: true
+  serviceUrl:
+   defaultZone: http://localhost:8043/eureka/
+  fetch-registry: true
+  register-with-eureka: true
+
+logging:
+ level:
+  org:
+    springframework: INFO
+  com:
+   netflix: INFO

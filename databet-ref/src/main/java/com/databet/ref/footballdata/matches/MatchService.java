@@ -36,7 +36,6 @@ public class MatchService {
 		this.competitionRepository = competitionRepository;
 	}
 
-	@Scheduled(fixedRate = 30000)
 	public void searchTeams() {
 		LOGGER.info("calling matchs...");
 
